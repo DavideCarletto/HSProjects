@@ -1,0 +1,87 @@
+@charset "ISO-8859-1";
+body {
+  background-color: #B0E0E6; /*impostazione colore di sfondo*/
+  font-family: Helvetica, sans-serif; /*impostazioni font*/
+}
+
+h1{
+  text-align:center;
+  color: black;
+  font-family: Helvetica;
+}
+
+.timeline {
+  position: relative; /*posizione dell'elemento timeline'*/
+  max-width: 1200px; /*larghezza massima dell'elemento*/
+  margin: 0 auto; /*centralità dell'elemento'*/
+}
+
+.timeline:after {
+  content: ''; /*aggiunta di un elemento*/
+  position: absolute; /*posizionamento rispetto agli elementi precedentemente aggiunti*/
+  width: 6px; /*larghezza*/
+  background-color: white; /*colore dello sfondo dell'elemento*/
+  top: 0; /*posizionamento verticale dell'elemento (bordo superiore)*/
+  bottom: 0;  /*posizionamento verticale dell'elemento (bordo inferiore)*/
+  left: 50%; /*altre impostazioni per la posizione*/
+  margin-left: -3px;
+}
+
+.container {
+  padding: 5px 20px; /*spazio alto-basso e destra-sinistra tra testo e contenitore*/
+  position: relative;
+  background-color: inherit; /*ereditare il colore di sfondo precedentemente impostato*/
+  width: 50%; /*larghezza dell'elemento*/
+}
+
+/* cerchietti */
+.container:after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #87CEFA; /*cambio di colore*/
+  border: 4px solid white; /*impostazioni del border: larghezza, stile e colore*/
+  top: 15px;
+  border-radius: 50%; /*arrotondare tutti gli angoli allo stesso modo*/
+  z-index: 1; /*gestire la sovrapposizione degli elementi*/
+}
+
+/* posizionamento container - sinistra */
+.left {
+  right: 25.5%;
+}
+
+/* posizionamento container - destra*/
+.right {
+  left: 25.5%;
+}
+
+/* Fissare i cerchietti ai conteiner */
+.right:after {
+  left: -16px;
+}
+
+/* contenuto effettivo */
+.content {
+  padding: 20px 30px; /*spazio inferiore-superiore e spazio laterale*/
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Sugli schermi di 600 px o meno, modificare il posizionamento della timeline a sinistra */
+@media screen and (max-width: 600px) {
+  .timeline:after {
+  left: 31px;
+}
+
+.container {
+  width: 100%;
+  padding-left: 70px; /*spazio a sinistra*/
+  padding-right: 25px; /*spazio a destra*/
+}
+
+  * {box-sizing: border-box;} /*foglio di stile a cascata che permette di ridimensionare gli elementi*/
+}

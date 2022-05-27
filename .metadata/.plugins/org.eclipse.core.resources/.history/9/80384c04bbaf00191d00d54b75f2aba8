@@ -1,0 +1,39 @@
+
+public class Libro {
+
+	private int codice;
+	private String titolo;
+	private Genere genere; 
+	private float prezzo;
+	private Autore[] elencoAutori;
+	
+	
+	public Libro(int codice, String titolo, Genere genere, float prezzo, Autore[] elencoAutori) {
+		super();
+		this.codice = codice;
+		this.titolo = titolo;
+		this.genere = genere;
+		this.prezzo = prezzo;
+		this.elencoAutori = elencoAutori;
+	}
+	
+	public int getCodice() {
+		return codice;
+	}
+	public String getTitolo() {
+		return titolo;
+	}
+	public Genere getGenere() {
+		return genere;
+	}
+	public float getPrezzo() {
+		return prezzo;
+	}
+	public Autore[] getElencoAutori() {
+		return elencoAutori;
+	}
+	
+	
+	
+	
+}

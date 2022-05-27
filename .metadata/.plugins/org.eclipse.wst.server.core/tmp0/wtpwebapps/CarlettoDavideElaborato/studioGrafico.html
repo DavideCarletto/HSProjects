@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+
+<head>
+<meta name="author" content="Carletto Davide">
+<meta name="description" content="Circuito RL">
+<meta charset="UTF-8">
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+
+<script type="text/javascript" async
+	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+	
+</script>
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<header>
+	<nav id="nav-bar">
+		<label>Carletto Davide Classe 5F</label>
+		<ul class="main-ul">
+			<li class="elements"><a href="index.html">Home</a></li>
+			<li class="elements drop-btn">Fonti
+				<ul class="dropdown">
+					<li><a href="Tipi/Backdoor/backdoor.html">Apertura
+							circuito</a></li>
+					<li><a href="Tipi/Worm/worm.html">Chiusura circuito</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</header>
+
+<body>
+	<div class="first-img"></div>
+
+	<p
+		style="padding-top: 3%; text-align: center; font-size: 45px; font-family: cursive; color: white; text-shadow: 2px 2px 7px rgb(0, 0, 0);">Studio
+		del grafico</p>
+	<img alt="" src="img/graficofoto.PNG"
+		style="display: block; margin-left: auto; margin-right: auto; width: 40%; opacity: .9">
+	<ol class="div-equazione-differnziale-spiegazione">
+		<li><p>
+				<b>Dominio</b>: non esiste nessun valore di t (positiva) per cui la
+				funzione si annulla, per cui il dominio sarà
+				<math display='block'>
+ <semantics>
+  <mrow>
+   <mo>&#x2200;</mo>
+					<mi>x</mi>
+					<mo>&#x2208;</mo>
+					<mi>R</mi></mrow>
+  <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
+  feaahqart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
+  hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
+  4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
+  vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
+  fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaGaeyiaIiIaam
+  iEaiabgIGiolaadkfaaaa@3A1B@
+  </annotation>
+ </semantics>
+</math>
+
+			</p></li>
+
+		<li><p>
+				<b>Asintoti: </b>
+				<math display='block'>
+ <semantics>
+  <mrow>
+   <mi>y</mi>
+					<mo>=</mo>
+					<mn>2</mn></mrow>
+  <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
+  feaahqart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
+  hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
+  4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
+  vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
+  fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaGaamyEaiabg2
+  da9iaaikdaaaa@38B3@
+  </annotation>
+ </semantics>
+</math>
+
+				Questo corrisponde al valore di V0/R. Infatti, se si calcola il
+				limite della funzione per t che tende all’infinito, si otterrà
+				proprio il valore V0/R.
+			</p></li>
+		<li><p>
+				<b>Derivata prima:</b>
+				<math display='block'>
+ <semantics>
+  <mrow>
+   <msup>
+    <mi>y</mi>
+    <mo>&#x0027;</mo>
+   </msup>
+   <mo>=</mo>
+					<mfrac>
+    <mn>5</mn>
+    <mrow>
+     <msup>
+      <mi>e</mi>
+      <mrow>
+       <mfrac>
+        <mn>5</mn>
+        <mn>2</mn>
+       </mfrac>
+       <mi>x</mi></mrow>
+     </msup>
+     </mrow>
+   </mfrac>
+   </mrow>
+  <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
+  feaahqart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
+  hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
+  4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
+  vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
+  fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaGaamyEamaaCa
+  aaleqabaGaai4jaaaakiabg2da9maalaaabaGaaGynaaqaaiaadwga
+  daahaaWcbeqaamaalaaabaGaaGynaaqaaiaaikdaaaGaamiEaaaaaa
+  aaaa@3D47@
+  </annotation>
+ </semantics>
+</math>
+
+			</p>
+			<ul>
+				<li><p>La funzione è sempre crescente per x[0,+inf]</p></li>
+				<li><p>La derivata si annulla per x che tende a infinito.
+						Questo valore, infatti, corrisponde ad un tempo trascorso dopo la
+						chiusura dell’interruttore molto lungo, il che significa che la
+						corrente si è stabilizzata intorno ad un certo valore.</p></li>
+			</ul></li>
+
+		<li><b>Derivata seconda:</b> <math display='block'>
+ <semantics>
+  <mrow>
+   <msup>
+    <mi>y</mi>
+    <mo>&#x0022;</mo>
+   </msup>
+   <mo>=</mo>
+				<mo>&#x2212;</mo>
+				<mfrac>
+    <mrow>
+     <mn>25</mn></mrow>
+    <mrow>
+     <mn>2</mn>
+				<msup>
+      <mi>e</mi>
+      <mrow>
+       <mfrac>
+        <mn>5</mn>
+        <mn>2</mn>
+       </mfrac>
+       <mi>x</mi></mrow>
+     </msup>
+     </mrow>
+   </mfrac>
+   </mrow>
+  <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
+  feaahqart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
+  hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
+  4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
+  vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
+  fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaGaamyEamaaCa
+  aaleqabaGaaiOiaaaakiabg2da9iabgkHiTmaalaaabaGaaGOmaiaa
+  iwdaaeaacaaIYaGaamyzamaaCaaaleqabaWaaSaaaeaacaaI1aaaba
+  GaaGOmaaaacaWG4baaaaaaaaa@3FA7@
+  </annotation>
+ </semantics>
+</math>
+			<p>I flessi sono presenti nei punti in cui la derivata seconda si
+				annulla. Dal momento che non esistono dei valori di x per cui questo
+				possa succedere, si può concludere che non siano presenti flessi.</p></li>
+		<li><b>Zeri:</b>
+			<p>C’è un solo punto di intersezione della funzione con gli assi,
+				e corrisponde all’origine (0;0)</p></li>
+		<li><b> Parità o disparità: </b>
+			<p style="margin-bottom: 10%;">Una volta risolta l’equazione
+				f(-x) si può constatare che la funzione in esame non è né pari né
+				dispari</p></li>
+	</ol>
+
+
+
+</body>
+
+<footer>
+	<h1
+		style="text-align: center; font-size: 20; font-family: cursive; color: white; opacity: .7">Carletto
+		Davide</h1>
+	<h4 class="footer-txt">Liceo Classico e Scientifico Statale
+		“Silvio Pellico – Giuseppe Peano” Cuneo</h4>
+	<h5 class="footer-txt">
+		Esame di Stato anno scolastico 2020/2021
+		</h4>
+</footer>
+
+</html>

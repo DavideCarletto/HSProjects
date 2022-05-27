@@ -1,0 +1,27 @@
+
+public class GestioneNum {
+	Razionale numeratore;
+	Razionale denominatore;
+	
+	
+	public static void main (String[] args) {
+	Razionale n1 = new Razionale();
+	
+	n1.setNumeratore();
+	n1.setDenominatore();
+	
+	n1.visualizzaNumero();
+	n1.calcolaFrazione();
+	
+	float ris = n1.calcolaFrazione();
+	System.out.println("\nIl numero razionale e' "+ris );
+	
+	n1.verificaNumeroIntero();
+	if (n1.verificaNumeroIntero()== true )
+		System.out.println("\nIl numero razionale e' intero");
+	else 
+		System.out.println("\nIl numero razionale non e' intero");
+	
+	}
+
+}

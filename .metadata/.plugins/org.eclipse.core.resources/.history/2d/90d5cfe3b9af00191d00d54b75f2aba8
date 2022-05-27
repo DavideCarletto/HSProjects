@@ -1,0 +1,54 @@
+import java.io.File;
+import java.io.FileOutputStream;
+import java.util.Scanner;
+
+import javax.swing.text.Document;
+
+import com.itextpdf.text.Image;
+import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.pdf.PdfWriter;
+
+public class Magazzino {
+
+	private Libro[] elencoLibriMagazzino;
+	private Scanner s  = new Scanner(System.in);
+	private int index;
+	
+	public Magazzino() {
+		elencoLibriMagazzino = new Libro[1000];
+		index =0;
+	}
+	
+	public void aggiungiLibro() {
+		System.out.println("Inserisci i dati richiesti: ");
+		System.out.println("Codice Isbn:");
+		int codice = s.nextInt();
+		System.out.println("Titolo:");
+		String titolo = s.next();
+		System.out.println("Genere (1-STORICO, 2- FANTASCIENZA,AVVENTURA,HORROR,AZIONE,GIALLO,THRILLER,FIABA,BIOGRAFIA,)");
+	}
+
+	public void GeneraPdf() {
+		String path = "C:/FilePdf/MagazzinoLibreria.pdf";
+		try {
+			File file = new File(path);
+			file.getParentFile().mkdirs();
+			com.itextpdf.text.Document  document = (com.itextpdf.text.Document) new  com.itextpdf.text.Document ();
+			PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(path));
+			document.open();
+			Image image = Image.getInstance("tesseraSconto.png");
+			document.add(image);
+			document.close();
+			}catch(Exception e ) {
+				
+		}
+	}
+	
+	
+	
+	public static void main (String[]args) {
+		Magazzino m = new Magazzino();
+		m.GeneraPdf();
+	}
+
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.lejos.nxt.ldt.LEJOS_LIBRARY_CONTAINER/nxt"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/Davide Carletto/Downloads/org.lejos.nxt.ldt.feature_0.9.0.201202141552(2).jar"/>
+	<classpathentry kind="lib" path="C:/Java/MioNXT.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

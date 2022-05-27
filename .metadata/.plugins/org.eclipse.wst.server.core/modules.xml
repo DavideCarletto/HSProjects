@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.jee.server:Amazon" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.wst.web.internal.deployables.static:PrimoSito" serverId="HTTP Preview at localhost"/>
+  <module moduleId="org.eclipse.wst.web.internal.deployables.static:StoriaTelecomincazioni" serverId="HTTP Preview at localhost"/>
+  <module moduleId="org.eclipse.wst.web.internal.deployables.static:StoriaDelWebFrancesca" serverId="HTTP Preview at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:SitoDinamico" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.wst.web.internal.deployables.static:StoriaDelWeb" serverId="HTTP Preview at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Ordini" serverId="Tomcat v9.0 Server at localhost"/>
+</modules>

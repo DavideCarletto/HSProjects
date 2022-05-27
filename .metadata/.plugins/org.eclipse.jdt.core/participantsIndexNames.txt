@@ -1,0 +1,31 @@
+INDEX VERSION 1.131
+C:\Users\Davide Carletto\Desktop\Info5F\CarlettoDavide\Workspace 5F\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\790158154.index
+\Amazon\src
+C:\Users\Davide Carletto\Desktop\Info5F\CarlettoDavide\Workspace 5F\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3698565548.index
+\SitoDinamico\src
+C:\Users\Davide Carletto\Desktop\Info5F\CarlettoDavide\Workspace 5F\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2684319439.index
+\CarlettoDavideElaborato\src
+C:\Users\Davide Carletto\Desktop\Info5F\CarlettoDavide\Workspace 5F\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3444817110.index
+\Zoucl\src
+C:\Users\Davide Carletto\Desktop\Info5F\CarlettoDavide\Workspace 5F\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1368882111.index
+\LibreriaWeb\src
+C:\Users\Davide Carletto\Desktop\Info5F\CarlettoDavide\Workspace 5F\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4221584811.index
+\AndamentoContagi2\src
+C:\Users\Davide Carletto\Desktop\Info5F\CarlettoDavide\Workspace 5F\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2469501265.index
+\AndamentoContagi\src
+C:\Users\Davide Carletto\Desktop\Info5F\CarlettoDavide\Workspace 5F\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1012890478.index
+\LbreriaWeb\src
+C:\Users\Davide Carletto\Desktop\Info5F\CarlettoDavide\Workspace 5F\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\244520746.index
+\Libreria\src
+C:\Users\Davide Carletto\Desktop\Info5F\CarlettoDavide\Workspace 5F\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3152742175.index
+\LoginUtente\src
+C:\Users\Davide Carletto\Desktop\Info5F\CarlettoDavide\Workspace 5F\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\694021076.index
+\Login\src
+C:\Users\Davide Carletto\Desktop\Info5F\CarlettoDavide\Workspace 5F\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2669983074.index
+\Verifica del 15-05-2022(1)\src
+C:\Users\Davide Carletto\Desktop\Info5F\CarlettoDavide\Workspace 5F\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\94424049.index
+\Libreria\src
+C:\Users\Davide Carletto\Desktop\Info5F\CarlettoDavide\Workspace 5F\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\907511981.index
+\Verifica del 15-05-2021\src
+C:\Users\Davide Carletto\Desktop\Info5F\CarlettoDavide\Workspace 5F\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2259414350.index
+\Ordini\src

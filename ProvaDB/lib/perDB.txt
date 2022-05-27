@@ -1,0 +1,2 @@
+String url = "jdbc:mysql://didattica.liceocuneo.it/db5F?serverTimezone=Europe/Rome";
+com.mysql.cj.jdbc.Driver

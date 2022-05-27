@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+
+<head>
+<meta name="author" content="Carletto Davide">
+<meta name="description" content="Circuito RL">
+<meta charset="UTF-8">
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  CommonHTML: {
+    scale: 150
+	
+  }
+});
+</script>
+<script type="text/javascript" async
+	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+	
+</script>
+</head>
+
+<header>
+	<nav id="nav-bar">
+		<label>Carletto Davide Classe 5F</label>
+		<ul class="main-ul">
+			<li class="elements"><a href="index.html">Home</a></li>
+			<li class="elements drop-btn">Fonti
+				<ul class="dropdown">
+					<li><a href="https://it.wikipedia.org/wiki/Circuito_RL">Wikipedia-Circuito
+							Rl</a></li>
+					<li><a
+						href="https://www.chimica-online.it/fisica/resistenza-elettrica.htm">Chimica
+							online-resistenza elettrica</a></li>
+					<li><a href="https://it.wikipedia.org/wiki/Induttanza">Wikipedia-induttanza</a></li>
+					<li><a
+						href="https://www.chimica-online.it/fisica/induttanza.htm">Chimica
+							online-induttanza</a></li>
+					<li style="color: white;">James S. Walker “Fisica modelli
+						teorici e problem solving 3” – Elettromagnetismo e Fisica moderna</li>
+					<li style="color: white;">James S. Walker “Fisica modelli
+						teorici e problem solving 2” – Onde e Elettricità e Magnetismo</li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</header>
+
+<body>
+	<div class="first-img"></div>
+
+	<div class="txt-container">
+		<div class="container">
+
+
+			<h1 class="titolo">Circuito Rl</h1>
+
+			<h2 style="font-size: 30px;">ARGOMENTO</h2>
+
+			<p class="argomento">Circuiti RL. Applicando la legge delle
+				maglie scrivi l’equazione differenziale del circuito. Integra
+				l’equazione differenziale con l’introduzione delle condizioni
+				iniziali. Studia il grafico della corrente in funzione del tempo.
+				Analizza in particolare il bilancio energetico del circuito.</p>
+		</div>
+		<div class="foto-section">
+			<div class="card">
+				<a href="circuito.html" target="_self"> <img
+					src="img/circuito.jpg" alt="circuito" style="width: 100%">
+				</a>
+				<div class="img-container">
+					<h4>
+						<b style="color: white; text-align: center; font-size: 20px;">Il
+							Circuito</b>
+					</h4>
+				</div>
+			</div>
+
+			<div class="card">
+				<a href="resistenza.html" target="_self"> <img
+					src="img/resistenza.jpg" alt="resistenza" style="width: 100%">
+				</a>
+				<div class="img-container">
+					<h4>
+						<b style="color: white; text-align: center; font-size: 20px;">La
+							resistenza</b>
+					</h4>
+				</div>
+			</div>
+
+			<div class="card">
+				<a href="induttanza.html" target="_self"> <img
+					src="img/induttanza.jpg" alt="induttanza" style="width: 100%">
+				</a>
+				<div class="img-container">
+					<h4>
+						<b style="color: white; text-align: center; font-size: 20px;">L'induttanza</b>
+					</h4>
+				</div>
+			</div>
+
+		</div>
+
+
+	</div>
+
+
+	<div class="div-equazione-differnziale">
+		<p class="txt-equazione-differenziale">Equazione differenziale</p>
+		<p
+			style="margin-left: 10%; margin-right: 10%; margin-top: 5%; font-size: 35px; font-family: cursive; color: white;">Legge
+			delle maglie</p>
+		<math display='block' style="color: white; display: inline-block;">
+ <semantics>
+  <mtable columnalign='left'>
+   <mtr>
+    <mtd>
+     <msub>
+      <mi>V</mi>
+      <mn>0</mn>
+     </msub>
+     <mtext>&#x00A0;</mtext>
+			<mo>+</mo>
+			<mtext>&#x00A0;</mtext>
+			<mi>V</mi>
+			<mi>l</mi>
+			<mtext>&#x00A0;</mtext>
+			<mo>+</mo>
+			<mtext>&#x00A0;</mtext>
+			<mi>V</mi>
+			<mi>r</mi>
+			<mtext>&#x00A0;</mtext>
+			<mo>=</mo>
+			<mtext>&#x00A0;</mtext>
+			<mn>0</mn>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <msub>
+      <mi>V</mi>
+      <mn>0</mn>
+     </msub>
+     <mtext>&#x00A0;-&#x00A0;L</mtext>
+			<mfrac>
+      <mrow>
+       <mi>&#x0394;</mi>
+			<mi>i</mi></mrow>
+      <mrow>
+       <mi>&#x0394;</mi>
+			<mi>t</mi></mrow>
+     </mfrac>
+     <mtext>&#x00A0;-&#x00A0;Ri&#x00A0;</mtext>
+			<mo>=</mo>
+			<mtext>&#x00A0;</mtext>
+			<mn>0</mn>
+    </mtd>
+   </mtr>
+  </mtable>
+  
+  <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
+  feaahqart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
+  hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
+  4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
+  vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
+  fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGceaqabeaaqaaaaa
+  aaaaWdbiaadAfadaWgaaWcbaGaaGimaaqabaGccaqGGaGaey4kaSIa
+  aeiiaiaadAfacaWGSbGaaeiiaiabgUcaRiaabccacaWGwbGaamOCai
+  aabccacqGH9aqpcaqGGaGaaGimaaqaaiaadAfadaWgaaWcbaGaaGim
+  aaqabaGccaqGGaGaaeylaiaabccacaqGmbWaaSaaaeaacqqHuoarca
+  WGPbaabaGaeuiLdqKaamiDaaaacaqGGaGaaeylaiaabccacaqGsbGa
+  aeyAaiaabccacqGH9aqpcaqGGaGaaGimaaaaaa@52E9@
+  </annotation>
+ </semantics>
+</math>
+
+		<p class="div-equazione-differnziale-spiegazione">
+			Utilizzando le formule con le derivate, considero
+			<math display='block'>
+ <semantics>
+  <mrow>
+   <mfrac>
+    <mrow>
+     <mi>&#x0394;</mi>
+				<mi>i</mi></mrow>
+    <mrow>
+     <mi>&#x0394;</mi>
+				<mi>t</mi></mrow>
+   </mfrac>
+   </mrow>
+  <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
+  feaahqart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
+  hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
+  4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
+  vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
+  fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaqcKbaa=haajqgaa9
+  =aaSaaaeaacqqHuoarcaWGPbaabaGaeuiLdqKaamiDaaaaaaa@3DC4@
+  </annotation>
+ </semantics>
+</math>
+			come la derivata della corrente sul tempo, riuscendo così a
+			ricondurmi alla forma di equazione differenziale lineare completa.
+			Risolvere l’equazione differenziale significa andare a ricercare la
+			funzione i(t) che, sostituita nell’equazione, la rende vera
+			(identicamente nulla).
+		</p>
+		<p class="div-equazione-differnziale-spiegazione">
+			Risolvo l’equazione differenziale omogenea:
+			<math display='block'>
+ <semantics>
+  <mrow>
+   <mi>y</mi>
+				<mo>=</mo>
+				<mi>A</mi>
+				<msup>
+    <mi>e</mi>
+    <mrow>
+     <mo>&#x2212;</mo>
+				<mfrac>
+      <mi>R</mi>
+      <mi>L</mi>
+     </mfrac>
+     <mi>t</mi></mrow>
+   </msup>
+   </mrow>
+  <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
+  feaahqart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
+  hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
+  4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
+  vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
+  fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaqcKbaa=haajqgaac
+  GaamyEaiabg2da9iaadgeacaWGLbGcdaahaaWcbeqaaiabgkHiTmaa
+  laaabaGaamOuaaqaaiaadYeaaaGaamiDaaaaaaa@3FCB@
+  </annotation>
+ </semantics>
+</math>
+		</p>
+
+		<p class="div-equazione-differnziale-spiegazione">
+			Ricerco la soluzione particolare dell’equazione differenziale non
+			omogenea e, introducendo le condizioni inziali otteniamo, ricavo la
+			formula definitiva:
+			<math display='block'>
+ <semantics>
+  <mrow>
+   <mi>i</mi>
+				<mo stretchy='false'>(</mo>
+				<mi>t</mi>
+				<mo stretchy='false'>)</mo>
+				<mo>=</mo>
+				<mfrac>
+    <mrow>
+     <msub>
+      <mi>V</mi>
+      <mn>0</mn>
+     </msub>
+     </mrow>
+    <mi>R</mi>
+   </mfrac>
+   <mo stretchy='false'>(</mo>
+				<mn>1</mn>
+				<mo>&#x2212;</mo>
+				<msup>
+    <mi>e</mi>
+    <mrow>
+     <mo>&#x2212;</mo>
+				<mfrac>
+      <mi>t</mi>
+      <mi>&#x03C4;</mi>
+     </mfrac>
+     </mrow>
+   </msup>
+   <mo stretchy='false'>)</mo></mrow>
+  <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
+  feaahqart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
+  hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
+  4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
+  vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
+  fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaGaamyAaiaacI
+  cacaWG0bGaaiykaiabg2da9maalaaabaGaamOvamaaBaaaleaacaaI
+  WaaabeaaaOqaaiaadkfaaaGaaiikaiaaigdacqGHsislcaWGLbWaaW
+  baaSqabeaacqGHsisldaWcaaqaaiaadshaaeaacqaHepaDaaaaaOGa
+  aiykaaaa@44C8@
+  </annotation>
+ </semantics>
+</math>
+		</p>
+		<p
+			style="margin-left: 10%; margin-right: 10%; margin-top: 10%; font-size: 35px; font-family: cursive; color: white; text-shadow: 2px 2px 7px rgb(0, 0, 0);">Grafico
+			della corrente in funzione del tempo</p>
+		<div class="card" style="margin-left: 40%">
+			<form action="Circuito RL in chiusura.xlsx" target=_blank>
+				<button name=”vai” type=”submit” style="background-color: white;">
+					<img src="img/graficofoto.PNG" alt="circuito" style="width: 100%;">
+				</button>
+			</form>
+			<div class="img-container">
+				<h4>
+					<b
+						style="margin-top: 10%; color: white; text-align: center; font-size: 16px; font-family: cursive;">figura-chiusura
+						circuito</b>
+				</h4>
+			</div>
+		</div>
+
+		<div class="card"
+			style="margin-left: 40%; padding-top: -20%; text-align: center;">
+
+			<a href="studioGrafico.html" target="_self">
+				<h4>
+					<b
+						style="margin-top: 10%; color: white; text-align: center; font-size: 16px; font-family: cursive;">
+						visualizza studio funzione</b>
+				</h4>
+			</a>
+		</div>
+
+		<p
+			style="margin-left: 10%; margin-right: 10%; font-size: 35px; font-family: cursive; color: white; text-shadow: 2px 2px 7px rgb(0, 0, 0);">Bilancio
+			energetico</p>
+		<p class="div-equazione-differnziale-spiegazione">Nella resistenza
+			una parte dell’energia potenziale viene convertita (per effetto
+			joule) in energia termica, che quindi si dissipa e non è più
+			disponibile all’interno del circuito. Per far scorrere una corrente
+			in un’induttanza occorre eseguire un lavoro, al fine di spingere le
+			cariche al suo interno e vincere la sua forza elettromotrice
+			autoindotta. Al contrario della resistenza, però, l’energia spesa non
+			viene dissipata, ma viene immagazzinata nel campo magnetico.</p>
+		<p class="div-equazione-differnziale-spiegazione">Il generatore,
+			al fine di vincere l’effetto ritardante dell’autoinduzione e far
+			aumentare l’intensità della corrente fino ad un valore stabile, deve
+			compiere un lavoro che è dato dalla formula</p>
+		<math display='block' style="color: white;">
+ <semantics>
+  <mrow>
+   <msub>
+    <mi>W</mi>
+    <mi>L</mi>
+   </msub>
+   <mo>=</mo>
+			<mfrac>
+    <mn>1</mn>
+    <mn>2</mn>
+   </mfrac>
+   <mi>L</mi>
+			<msup>
+    <mi>i</mi>
+    <mn>2</mn>
+   </msup>
+   </mrow>
+  <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
+  feaahqart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
+  hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
+  4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
+  vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
+  fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaGaam4vamaaBa
+  aaleaacaWGmbaabeaakiabg2da9maalaaabaGaaGymaaqaaiaaikda
+  aaGaamitaiaadMgadaahaaWcbeqaaiaaikdaaaaaaa@3D0B@
+  </annotation>
+ </semantics>
+</math>
+
+		<p class="div-equazione-differnziale-spiegazione" ">Per dimostrare
+			questa formula, possiamo passare mediante l’utilizzo dell’integrale
+			definito partendo dalla definizione di lavoro di carica, che è dato
+			dalla formula</p>
+		<math display='block'style="color: white;">
+ <semantics>
+  <mrow>
+   <mi>L</mi>
+			<mo>=</mo>
+			<mstyle displaystyle='true'>
+    <mrow>
+			<mo>&#x222B;</mo>
+     <mrow>
+      <mi>P</mi>
+			<mo>&#x22C5;</mo>
+			<mi>d</mi>
+			<mi>t</mi></mrow>
+    </mrow>
+    
+   </mstyle></mrow>
+  <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
+  feaahqart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
+  hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
+  4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
+  vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
+  fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaGaamitaiabg2
+  da9maapeaabaGaamiuaiabgwSixlaadsgacaWG0baaleqabeqdcqGH
+  RiI8aaaa@3EC6@
+  </annotation>
+ </semantics>
+</math>
+
+		<p class="div-equazione-differnziale-spiegazione">Che diventa
+			quindi</p>
+		<math display='block' style="color: white;">
+ <semantics>
+  <mrow>
+   <msub>
+    <mi>W</mi>
+    <mi>L</mi>
+   </msub>
+   <mo>=</mo>
+			<mstyle displaystyle='true'>
+    <mrow>
+			<munderover>
+     <mo>&#x222B;</mo>
+     <mn>0</mn>
+     <mi>I</mi>
+    </munderover>
+    <mrow>
+     <mi>V</mi>
+			<mo>&#x22C5;</mo>
+			<mi>i</mi>
+			<mo>&#x22C5;</mo>
+			<mi>d</mi>
+			<mi>t</mi>
+			<mo>=</mo></mrow>
+   </mrow>
+   
+  </mstyle>
+			<mstyle displaystyle='true'>
+   <mrow>
+			<munderover>
+    <mo>&#x222B;</mo>
+    <mn>0</mn>
+    <mi>I</mi>
+   </munderover>
+   <mrow>
+    <mi>L</mi>
+			<mfrac>
+     <mrow>
+      <mi>d</mi>
+			<mi>i</mi></mrow>
+     <mrow>
+      <mi>d</mi>
+			<mi>t</mi></mrow>
+    </mfrac>
+    <mo>&#x22C5;</mo>
+			<mi>i</mi>
+			<mo>&#x22C5;</mo>
+			<mi>d</mi>
+			<mi>t</mi>
+			<mo>=</mo></mrow>
+  </mrow>
+  
+ </mstyle>
+			<mstyle displaystyle='true'>
+  <mrow>
+			<munderover>
+   <mo>&#x222B;</mo>
+   <mn>0</mn>
+   <mi>I</mi>
+  </munderover>
+  <mrow>
+   <mi>L</mi>
+			<mo>&#x22C5;</mo>
+			<mi>i</mi>
+			<mo>&#x22C5;</mo>
+			<mi>d</mi>
+			<mi>i</mi>
+			<mo>=</mo>
+			<mi>L</mi>
+			<msubsup>
+    <mrow>
+     <mfenced close="]" open="[">
+      <mrow>
+       <mfrac>
+        <mrow>
+         <msup>
+          <mi>i</mi>
+          <mn>2</mn>
+         </msup>
+         </mrow>
+        <mn>2</mn>
+       </mfrac>
+       </mrow>
+     </mfenced></mrow>
+    <mn>0</mn>
+    <mi>I</mi>
+   </msubsup>
+   </mrow>
+ </mrow>
+ 
+</mstyle>
+			<mo>=</mo>
+			<mfrac>
+ <mn>1</mn>
+ <mn>2</mn>
+</mfrac>
+<mi>L</mi>
+			<msup>
+ <mi>i</mi>
+ <mn>2</mn>
+</msup>
+</mrow>
+<annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
+feaahqart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
+hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
+4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
+vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
+fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaGaam4vamaaBa
+aaleaacaWGmbaabeaakiabg2da9maapehabaGaamOvaiabgwSixlaa
+dMgacqGHflY1caWGKbGaamiDaiabg2da9aWcbaGaaGimaaqaaiaadM
+eaa0Gaey4kIipakmaapehabaGaamitamaalaaabaGaamizaiaadMga
+aeaacaWGKbGaamiDaaaacqGHflY1caWGPbGaeyyXICTaamizaiaads
+hacqGH9aqpaSqaaiaaicdaaeaacaWGjbaaniabgUIiYdGcdaWdXbqa
+aiaadYeacqGHflY1caWGPbGaeyyXICTaamizaiaadMgacqGH9aqpca
+WGmbWaamWaaeaadaWcaaqaaiaadMgadaahaaWcbeqaaiaaikdaaaaa
+keaacaaIYaaaaaGaay5waiaaw2faamaaDaaaleaacaaIWaaabaGaam
+ysaaaaaeaacaaIWaaabaGaamysaaqdcqGHRiI8aOGaeyypa0ZaaSaa
+aeaacaaIXaaabaGaaGOmaaaacaWGmbGaamyAamaaCaaaleqabaGaaG
+Omaaaaaaa@7095@
+</annotation>
+</semantics>
+</math>
+
+	</div>
+</body>
+
+<footer>
+	<h1
+		style="text-align: center; font-size: 20; font-family: cursive; color: white; opacity: .7">Carletto
+		Davide</h1>
+	<h4 class="footer-txt">Liceo Classico e Scientifico Statale
+		“Silvio Pellico – Giuseppe Peano” Cuneo</h4>
+	<h5 class="footer-txt">
+		Esame di Stato anno scolastico 2020/2021
+		</h4>
+</footer>
+
+
+</html>

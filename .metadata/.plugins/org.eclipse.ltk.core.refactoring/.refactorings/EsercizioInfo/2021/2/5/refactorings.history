@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;MainFrame.java&apos; to &apos;COVID-19/src/liceocuneo.frontend&apos;&#x0D;&#x0A;- Original project: &apos;EsercizioInfo&apos;&#x0D;&#x0A;- Destination element: &apos;COVID-19/src/liceocuneo.frontend&apos;&#x0D;&#x0A;- Original element: &apos;MainFrame.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" destination="=COVID-19/src&lt;liceocuneo.frontend" element1="MainFrame.java" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1612218611692" units="0" version="1.0"/>
+</session>

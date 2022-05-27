@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;ProvaDB.java&apos; to &apos;ProvaDB/src/liceocuneo.provaDB&apos;&#x0D;&#x0A;- Original project: &apos;ProvaDB&apos;&#x0D;&#x0A;- Destination element: &apos;ProvaDB/src/liceocuneo.provaDB&apos;&#x0D;&#x0A;- Original element: &apos;ProvaDB.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;liceocuneo.provaDB" element1="/src&lt;{ProvaDB.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1606779522191" units="1" version="1.0"/>
+</session>

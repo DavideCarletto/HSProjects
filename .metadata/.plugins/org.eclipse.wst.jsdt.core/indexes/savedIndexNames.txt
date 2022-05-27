@@ -1,0 +1,19 @@
+INDEX VERSION 1.4+C:\Users\Davide Carletto\Desktop\Info5F\CarlettoDavide\Workspace 5F\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3305059755.index
+3819468469.index
+1854853269.index
+3587522993.index
+933143827.index
+3391272477.index
+2605803413.index
+2594354919.index
+3338848895.index
+945248389.index
+4196299271.index
+1734703654.index
+1311535199.index
+1698938077.index
+4148072420.index
+1979557838.index
+771438357.index
+3095588340.index

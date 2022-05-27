@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 5 elements to &apos;WebContent&apos;&#x0D;&#x0A;- Original project: &apos;ElaboratoCircuitoRL&apos;&#x0D;&#x0A;- Destination element: &apos;WebContent&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     backblue.gif&#x0D;&#x0A;     fade.gif&#x0D;&#x0A;     hts-log.txt&#x0D;&#x0A;     index.html&#x0D;&#x0A;     didattica1.liceocuneo.it_8080" description="Copy elements" element1="backblue.gif" element2="fade.gif" element3="hts-log.txt" element4="index.html" element5="didattica1.liceocuneo.it_8080" files="4" flags="589830" folders="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1623630291660" target="/CarlettoDavideElaborato/WebContent" units="0" version="1.0"/>
+</session>

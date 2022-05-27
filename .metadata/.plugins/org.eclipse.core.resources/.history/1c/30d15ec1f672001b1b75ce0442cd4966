@@ -1,0 +1,40 @@
+import java.io.File;
+
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+
+public class MainFrame extends JFrame {
+	
+	private JMenuItem itemImporta;
+	
+	public MainFrame() {
+		super("sos");
+		
+		setSize(1000,700);
+		setLocationRelativeTo(null);
+		initComponent();
+		
+	}
+
+	public void initComponent() {
+		JMenuBar barra = new JMenuBar();
+		JMenu menu = new JMenu("File");
+		itemImporta = new JMenuItem("importa");
+		
+		menu.add(itemImporta);
+		barra.add(menu);
+		setJMenuBar(barra);
+		
+		
+	}
+	
+	public void importaCsv(File file) {
+		
+	}
+	public static void main(String[] args) {
+		MainFrame main = new MainFrame();
+		main.setVisible(true);
+	}
+}

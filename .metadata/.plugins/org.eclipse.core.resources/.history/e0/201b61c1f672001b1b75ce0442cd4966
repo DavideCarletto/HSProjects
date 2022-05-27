@@ -1,0 +1,50 @@
+import java.sql.Date;
+
+public class Temperatura {
+
+	private int idSensore;
+	private Date data;
+	private float valore;
+	private String stato;
+
+	public Temperatura(int idSensore, Date data, float valore, String stato) {
+		super();
+		this.idSensore = idSensore;
+		this.data = data;
+		this.valore = valore;
+		this.stato = stato;
+	}
+
+	public int getIdSensore() {
+		return idSensore;
+	}
+
+	public void setIdSensore(int idSensore) {
+		this.idSensore = idSensore;
+	}
+
+	public Date getData() {
+		return data;
+	}
+
+	public void setData(Date data) {
+		this.data = data;
+	}
+
+	public float getValore() {
+		return valore;
+	}
+
+	public void setValore(float valore) {
+		this.valore = valore;
+	}
+
+	public String getStato() {
+		return stato;
+	}
+
+	public void setStato(String stato) {
+		this.stato = stato;
+	}
+
+}

@@ -1,0 +1,208 @@
+import java.io.File;
+import java.io.FileOutputStream;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.Scanner;
+
+import javax.swing.text.Document;
+
+import com.itextpdf.text.BaseColor;
+import com.itextpdf.text.Element;
+import com.itextpdf.text.Image;
+import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.pdf.PdfPCell;
+import com.itextpdf.text.pdf.PdfPTable;
+import com.itextpdf.text.pdf.PdfWriter;
+
+public class Magazzino {
+
+	private Libro[] elencoLibriMagazzino;
+	private Cliente[] elencoClienti;
+	private Scanner s  = new Scanner(System.in);
+	private int index;
+	private int index2;
+	
+	public Magazzino() {
+		elencoLibriMagazzino = new Libro[1000];
+		elencoClienti = new Cliente[1000];
+		index =0;
+		index2 =0;
+	}
+	
+	public Libro aggiungiLibro() {
+		System.out.println("Inserisci i dati richiesti: ");
+		System.out.println("Codice Isbn:");
+		int codice = s.nextInt();
+		System.out.println("Titolo:");
+		String titolo = s.next();
+		Genere genere = null;
+		boolean value = true;
+		
+		do {
+			try {
+				System.out.println("Genere (1-STORICO, 2- FANTASCIENZA, 3- AVVENTURA, 4- HORROR, 5- AZIONE, 6- GIALLO, 7- THRILLER, 8- FIABA, 9- BIOGRAFIA,)");
+				int scelta = s.nextInt();
+				
+				switch(scelta) {
+				case 1:
+					genere = Genere.STORICO;
+					break;
+				case 2:
+					genere = Genere.FANTASCIENZA;
+					break;
+				case 3:
+					genere = Genere.AVVENTURA;
+					break;
+				case 4:
+					genere = Genere.HORROR;
+					break;
+				case 5:
+					genere = Genere.AZIONE;
+					break;
+				case 6:
+					genere = Genere.GIALLO;
+				break;
+				case 7:
+					genere = Genere.THRILLER;
+					break;
+				case 8:
+					genere = Genere.FIABA;
+					break;
+				case 9:
+					genere = Genere.BIOGRAFIA;
+					break;
+			
+				}
+					if (genere == null) {
+						throw new Exception();
+					}
+					value = false;
+			}catch(Exception exc) {
+			System.out.println("input non valido. Riprovare");
+			}
+		}while(value == true);
+		
+		System.out.println("prezzo: ");
+		float prezzo = s.nextFloat();
+		
+		Libro libro = new Libro (codice,titolo,genere,prezzo);
+		
+		System.out.println("Numero autori: ");
+		int nAutori = s.nextInt();
+		
+		for (int i=0; i<nAutori ; i++) {
+			System.out.println("Dati del "+(i+1)+"° autore: ");
+			System.out.println("Codice:");
+			int codiceAutore = s.nextInt();
+			System.out.println("Nome:");
+			String nome = s.next();
+			System.out.println("Cognome");
+			String cognome = s.next();
+			System.out.println("Data di nascita( gg/mm/aaaa): ");
+			String date = s.next();
+			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+			GregorianCalendar dataNascita = null;
+			try {
+				Date d = sdf.parse(date);
+				dataNascita = new GregorianCalendar();
+				dataNascita.setTime(d);
+			} catch (ParseException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			Autore autore = new Autore (codiceAutore,nome, cognome,dataNascita);	
+			libro.addAutore(autore);
+		}
+		return libro;
+	}
+
+	public Cliente caricaDatiCliente() {
+		System.out.println("Inserisci i dati richiesti per ottenere la tessera sconto del 20% ");
+		System.out.println("Nome: ");
+		String nome = s.next();
+		System.out.println("Cognome");
+		String cognome = s.next();
+		System.out.println("Data di nascita: (gg/mm/aaaa)");
+		String date = s.next();
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		GregorianCalendar dataNascita = null;
+		try {
+			Date d = sdf.parse(date);
+			dataNascita = new GregorianCalendar();
+			dataNascita.setTime(d);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Cliente cliente = new Cliente(nome,cognome,dataNascita);
+		return cliente;
+	}
+
+	public void addLibro(Libro libro) {
+		elencoLibriMagazzino[index++]=libro;
+	}
+	
+	public void addCliente(Cliente cliente) {
+		elencoClienti[index++] = cliente;
+	}
+	
+	public void generaTesseraPdf() {
+		String path = "C:/FilePdf/TesseraLibreria.pdf";
+		try {
+			File file = new File(path);
+			file.getParentFile().mkdirs();
+			com.itextpdf.text.Document  document = (com.itextpdf.text.Document) new  com.itextpdf.text.Document ();
+			PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(path));
+			document.open();
+			Image image = Image.getInstance("tesseraSconto.png");
+			document.add(image);
+			document.close();
+			}catch(Exception e ) {
+				e.printStackTrace();
+		}
+	}
+	public void generaTabellaLibriPdf() {
+		String path = "C:/FilePdf/TabellaLibri.pdf";
+		try {
+			File file = new File(path);
+			file.getParentFile().mkdirs();
+			com.itextpdf.text.Document  document = (com.itextpdf.text.Document) new  com.itextpdf.text.Document ();
+			PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(path));
+			document.open();
+			document.add(new Paragraph("ELENCO LIBRI"));
+			PdfPTable table = new PdfPTable(4);
+			PdfPCell cell = new PdfPCell (new Paragraph("Libri"));
+			cell.setColspan(4);
+			cell.setHorizontalAlignment(Element.ALIGN_CENTER);
+			cell.setBackgroundColor(BaseColor.LIGHT_GRAY);
+			table.addCell(cell);
+			table.addCell("Codice");
+			table.addCell("Titolo");
+			table.addCell("Genere");
+			table.addCell("Prezzo");
+
+			
+			
+			document.add(table);
+			document.close();
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void visualizzaLibri() {
+		for (int i=0; i<index; i++) {
+			System.out.println(elencoLibriMagazzino[i].toString());
+		}
+	}
+	
+	
+	public static void main (String[]args) {
+		Magazzino m = new Magazzino();
+		m.generaTabellaLibriPdf();
+	}
+
+}

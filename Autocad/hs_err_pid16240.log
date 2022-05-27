@@ -1,0 +1,143 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 700416 bytes for card table expansion
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_windows.cpp:3331), pid=16240, tid=0x00003d90
+#
+# JRE version:  (8.0_181-b13) (build )
+# Java VM: Java HotSpot(TM) Client VM (25.181-b13 mixed mode, sharing windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x002ae800):  JavaThread "Unknown thread" [_thread_in_vm, id=15760, stack(0x00c70000,0x00cc0000)]
+
+Stack: [0x00c70000,0x00cc0000],  sp=0x00cbf6d4,  free space=317k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1accfb]
+V  [jvm.dll+0x1a53c8]
+V  [jvm.dll+0x1c4a8e]
+V  [jvm.dll+0x164471]
+V  [jvm.dll+0x9274a]
+V  [jvm.dll+0x96376]
+V  [jvm.dll+0x9c625]
+V  [jvm.dll+0x9b1bc]
+V  [jvm.dll+0xaa79b]
+V  [jvm.dll+0x15a974]
+V  [jvm.dll+0x17f45b]
+V  [jvm.dll+0xe7f01]
+C  [javaw.exe+0x1598]
+C  [javaw.exe+0x210f]
+C  [javaw.exe+0xb05f]
+C  [javaw.exe+0xb0e9]
+C  [KERNEL32.DLL+0x20179]
+C  [ntdll.dll+0x6662d]
+C  [ntdll.dll+0x665fd]
+C  0x00000000
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x002ae800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=15760, stack(0x00c70000,0x00cc0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x01010000 - 0x01043000 	C:\Program Files (x86)\Java\jre1.8.0_181\bin\javaw.exe
+0x77290000 - 0x7742c000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x74dd0000 - 0x74eb0000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x75360000 - 0x7555a000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x77190000 - 0x7720e000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x756f0000 - 0x757b0000 	C:\WINDOWS\System32\msvcrt.dll
+0x76b30000 - 0x76ba9000 	C:\WINDOWS\System32\sechost.dll
+0x74d10000 - 0x74dcf000 	C:\WINDOWS\System32\RPCRT4.dll
+0x74900000 - 0x74920000 	C:\WINDOWS\System32\SspiCli.dll
+0x748f0000 - 0x748fa000 	C:\WINDOWS\System32\CRYPTBASE.dll
+0x74b90000 - 0x74bf2000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x76ea0000 - 0x77039000 	C:\WINDOWS\System32\USER32.dll
+0x760a0000 - 0x760b7000 	C:\WINDOWS\System32\win32u.dll
+0x767a0000 - 0x767c3000 	C:\WINDOWS\System32\GDI32.dll
+0x74a20000 - 0x74b87000 	C:\WINDOWS\System32\gdi32full.dll
+0x76a80000 - 0x76b00000 	C:\WINDOWS\System32\msvcp_win.dll
+0x75e70000 - 0x75f92000 	C:\WINDOWS\System32\ucrtbase.dll
+0x6bea0000 - 0x6c0af000 	C:\WINDOWS\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.17763.379_none_4d6572bf1b98bda7\COMCTL32.dll
+0x76bc0000 - 0x76e38000 	C:\WINDOWS\System32\combase.dll
+0x76b00000 - 0x76b25000 	C:\WINDOWS\System32\IMM32.DLL
+0x58240000 - 0x582ff000 	C:\Program Files (x86)\Java\jre1.8.0_181\bin\msvcr100.dll
+0x62780000 - 0x62b53000 	C:\Program Files (x86)\Java\jre1.8.0_181\bin\client\jvm.dll
+0x77270000 - 0x77276000 	C:\WINDOWS\System32\PSAPI.DLL
+0x746a0000 - 0x746c4000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x57490000 - 0x57498000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x74cb0000 - 0x74d0f000 	C:\WINDOWS\System32\WS2_32.dll
+0x74740000 - 0x74748000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x745a0000 - 0x745c3000 	C:\WINDOWS\SYSTEM32\winmmbase.dll
+0x76a40000 - 0x76a7b000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x6c240000 - 0x6c24c000 	C:\Program Files (x86)\Java\jre1.8.0_181\bin\verify.dll
+0x6b100000 - 0x6b122000 	C:\Program Files (x86)\Java\jre1.8.0_181\bin\java.dll
+0x6b6c0000 - 0x6b6d4000 	C:\Program Files (x86)\Java\jre1.8.0_181\bin\zip.dll
+0x6c0b0000 - 0x6c23f000 	C:\WINDOWS\SYSTEM32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 -Xmx1024m -Xms1024m 
+java_command: GestioneAutocad
+java_class_path (initial): C:\Program Files (x86)\Java\jre1.8.0_181\lib\resources.jar;C:\Program Files (x86)\Java\jre1.8.0_181\lib\rt.jar;C:\Program Files (x86)\Java\jre1.8.0_181\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.8.0_181\lib\jce.jar;C:\Program Files (x86)\Java\jre1.8.0_181\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.8.0_181\lib\jfr.jar;C:\Program Files (x86)\Java\jre1.8.0_181\lib\ext\access-bridge-32.jar;C:\Program Files (x86)\Java\jre1.8.0_181\lib\ext\cldrdata.jar;C:\Program Files (x86)\Java\jre1.8.0_181\lib\ext\dnsns.jar;C:\Program Files (x86)\Java\jre1.8.0_181\lib\ext\jaccess.jar;C:\Program Files (x86)\Java\jre1.8.0_181\lib\ext\jfxrt.jar;C:\Program Files (x86)\Java\jre1.8.0_181\lib\ext\localedata.jar;C:\Program Files (x86)\Java\jre1.8.0_181\lib\ext\nashorn.jar;C:\Program Files (x86)\Java\jre1.8.0_181\lib\ext\sunec.jar;C:\Program Files (x86)\Java\jre1.8.0_181\lib\ext\sunjce_provider.jar;C:\Program Files (x86)\Java\jre1.8.0_181\lib\ext\sunmscapi.jar;C:\Program Files (x86)\Java\jre1.8.0_181\lib\ext\sunpkcs11.jar;C:\Program Files (x86)\Java\jre1.8.0_181\lib\ext\zipfs.jar;C:\Users\Davide Carletto\eclipse-workspace\Autocad\bin
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+_JAVA_OPTIONS= -Xmx1024m -Xms1024m
+PATH=C:/Program Files (x86)/Java/jre1.8.0_181/bin/client;C:/Program Files (x86)/Java/jre1.8.0_181/bin;C:/Program Files (x86)/Java/jre1.8.0_181/lib/i386;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Davide Carletto\AppData\Local\Microsoft\WindowsApps;%DASHLANE_DLL_DIR%;C:\Users\Davide Carletto\Documents\eclipse-java-oxygen-3a-win32\eclipse;
+USERNAME=DavidePC
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 78 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 17763 (10.0.17763.379)
+
+CPU:total 4 (initial active 4) (2 cores per cpu, 2 threads per core) family 6 model 78 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 8218096k(4243708k free), swap 33124332k(4144k free)
+
+vm_info: Java HotSpot(TM) Client VM (25.181-b13) for windows-x86 JRE (1.8.0_181-b13), built on Jul  7 2018 03:18:20 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Fri Mar 22 21:59:53 2019
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

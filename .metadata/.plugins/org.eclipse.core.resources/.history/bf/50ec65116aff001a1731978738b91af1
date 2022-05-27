@@ -1,0 +1,104 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.LinkedList;
+import java.util.TreeMap;
+
+public class Test {
+	private Studente[] studenti1;
+	private ArrayList<Studente> studenti2;
+	private LinkedList<Studente> studenti3;
+	private Hashtable studenti4;
+	private HashMap studenti5;
+	private TreeMap studenti6;
+
+	private static final int NUM_MAX_STUDENTI = 1000000;
+
+	public void creaArrays() {
+		studenti1 = new Studente[NUM_MAX_STUDENTI];
+		studenti2 = new ArrayList<>();
+		studenti3 = new LinkedList<>();
+		studenti4 = new Hashtable<>();
+		studenti5 = new HashMap<>();
+		studenti6 = new TreeMap<>();
+
+		for (int i = 0; i < NUM_MAX_STUDENTI; i++) {
+			Studente s = new Studente((int) Math.random());
+
+			studenti1[i] = s;
+			studenti2.add(s);
+			studenti3.add(s);
+			studenti4.put("" + Math.random(), s);
+			studenti5.put("" + Math.random(), s);
+			studenti5.put("" + Math.random(), s);
+
+		}
+
+	}
+
+	public void testaArrayStaico() {
+		long startTime = System.currentTimeMillis();
+		for (int i = 0; i < NUM_MAX_STUDENTI; i++) {
+			System.out.println(""+i);
+		}
+		long elapsedTime = System.currentTimeMillis()-startTime;
+		System.out.println("tempo trascorso arrayStatico:"+elapsedTime);
+	}
+
+	public void testaArrayDinamico() {
+		long startTime = System.currentTimeMillis();
+		for (int i = 0; i < NUM_MAX_STUDENTI; i++) {
+			System.out.println(""+i);
+		}
+		long elapsedTime = System.currentTimeMillis()-startTime;
+		System.out.println("tempo trascorso arrayDinamico:"+elapsedTime);
+	}
+
+	public void testaArrayConcatenato() {
+		long startTime = System.currentTimeMillis();
+		for (int i = 0; i < NUM_MAX_STUDENTI; i++) {
+			System.out.println(""+i);
+		}
+		long elapsedTime = System.currentTimeMillis()-startTime;
+		System.out.println("tempo trascorso arrayConcatenato:"+elapsedTime);
+	}
+
+	public void testaHashTable() {
+		long startTime = System.currentTimeMillis();
+		for (int i = 0; i < NUM_MAX_STUDENTI; i++) {
+			System.out.println(""+i);
+		}
+		long elapsedTime = System.currentTimeMillis()-startTime;
+		System.out.println("tempo trascorso HashTable:"+elapsedTime);
+	}
+
+	public void testaHashMap() {
+		long startTime = System.currentTimeMillis();
+		for (int i = 0; i < NUM_MAX_STUDENTI; i++) {
+			System.out.println(""+i);
+		}
+		long elapsedTime = System.currentTimeMillis()-startTime;
+		System.out.println("tempo trascorso HashMap:"+elapsedTime);
+	}
+
+	public void testaTreeMap() {
+		long startTime = System.currentTimeMillis();
+		for (int i = 0; i < NUM_MAX_STUDENTI; i++) {
+			System.out.println(""+i);
+		}
+		long elapsedTime = System.currentTimeMillis()-startTime;
+		System.out.println("tempo trascorso treeMap:"+elapsedTime);
+	}
+
+	public static void main(String[] args) {
+		Test test = new Test();
+		test.creaArrays();
+		test.testaArrayStaico();
+		test.testaArrayDinamico();
+		test.testaArrayConcatenato();
+		test.testaHashTable();
+		test.testaHashMap();
+		test.testaTreeMap();
+	}
+
+}

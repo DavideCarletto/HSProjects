@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\Davide Carletto\Desktop\Info5F\AmanziMatteo\FBI\src"/>
+		<item value="C:\Users\Davide Carletto\Desktop\Info5F\RiminaldiFrancesca\ProvaDBMS\src\prova"/>
+		<item value="C:\Users\Davide Carletto\Desktop\Info5F\AmanziMatteo\FBI"/>
+		<item value="C:\Users\Davide Carletto\Desktop\Info5F\_DOCENTE\Workspace\ProvaDB"/>
+		<item value="C:\Users\Davide Carletto\Desktop\Info5F\_DOCENTE\Workspace\ProvaDB\src"/>
+		<item value="C:\Users\Davide Carletto\Desktop\Info5F\VurchioEleonora\WORKSPACE 5F\Ricettario1"/>
+		<item value="C:\Users\Davide Carletto\Desktop\Info5F\RiminaldiFrancesca\Ricettario"/>
+		<item value="C:\Users\Davide Carletto\Desktop\Info5F\_DOCENTE\Workspace\RicercaRicette"/>
+	</list>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jst.servlet.ui.project.facet.WebProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.wst.web.ui"/>
+		</list>
+	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Davide Carletto\Desktop\Info5F\CarlettoDavide\Workspace 5F\ElaboratoCircuitoRL"/>
+			<item value="C:\Users\Davide Carletto\Desktop\Info5F\CarlettoDavide\Workspace 5F\Elaborato Circuito RL"/>
+			<item value="C:\Users\Davide Carletto\Desktop\html"/>
+			<item value="C:\Users\Davide Carletto\Desktop\Info5F\AmanziMatteo"/>
+			<item value="C:\Users\Davide Carletto\Desktop\Info5F\RomanoSimone\LoginUtente"/>
+			<item value="C:\Users\Davide Carletto\Desktop\Info5F\AmanziMatteo\Amazon"/>
+			<item value="C:\Users\Davide Carletto\Desktop\Info5F\BersiaMatilde\Workspace 2020-2021\12_Login - Dynamic Web Project"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
+		<item key="ShowStatusLine" value="true"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode/&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
+		<item key="ShowDerived" value="false"/>
+		<item key="FilterByLocation" value="false"/>
+		<item key="WorkingSet" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;"/>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_X_ORIGIN" value="668"/>
+			<item key="DIALOG_Y_ORIGIN" value="195"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|12.75|0|WINDOWS|1|-17|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		</section>
+	</section>
+</section>
